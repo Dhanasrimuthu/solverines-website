@@ -29,6 +29,7 @@ import {
   AutoAwesome
 } from '@mui/icons-material';
 import ServiceCopyrights from '@/app/component/service-copyright/page';
+import Link from 'next/link';
 
 const ITConsultingPage = () => {
   const services = [
@@ -390,7 +391,7 @@ const ITConsultingPage = () => {
               <Typography variant="body1" sx={{ mb: 4, opacity: 0.9, fontSize: '1.1rem' }}>
                 Let's discuss how our IT consulting services can drive your business forward
               </Typography>
-              <Button
+              <Button component={Link} href="/contact"
                 variant="contained"
                 size="large"
                 sx={{

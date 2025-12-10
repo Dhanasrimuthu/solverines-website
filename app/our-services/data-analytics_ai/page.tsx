@@ -28,6 +28,7 @@ import {
 } from '@mui/icons-material';
 import ServiceCopyrights from '@/app/component/service-copyright/page';
 import style  from './data-analytics.module.css';
+import Link from 'next/link';
 const DataAnalyticsAIPage = () => {
   const services = [
     {
@@ -333,7 +334,7 @@ const DataAnalyticsAIPage = () => {
               <Typography variant="body1" sx={{ mb: 4, opacity: 0.9, fontSize: '1.1rem' }}>
                 Let's discuss how data analytics and AI can accelerate your digital transformation
               </Typography>
-              <Button
+              <Button component={Link} href="/contact"
                 variant="contained"
                 size="large"
                 sx={{
