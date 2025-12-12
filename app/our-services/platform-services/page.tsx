@@ -24,7 +24,6 @@ import styles from './platform.module.css'
 const PlatformServicesPage = () => {
   const [activeService, setActiveService] = useState<number|null>(null);
   const [scrollY, setScrollY] = useState(0);
-  //const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -106,7 +105,6 @@ const PlatformServicesPage = () => {
 
   return (
     <div className={styles.platformservicespage}>
-      {/* Hero Section */}
       <section  className={styles.herosection} >
         <div className={styles.heropattern}></div>
         <div className={styles.heroicons}>
@@ -116,13 +114,10 @@ const PlatformServicesPage = () => {
           <Shield className={styles.floatingicon} sx={{ fontSize: 65 }} />
         </div>
         <div className={styles.herocontent}>
-          <h1 className={styles.herotitle}style={{color: "white"}}>Platform Services</h1>
-          <h2 className={styles.herosubtitle} style={{color: "white"}}>Unlock the Full Potential of Your Digital Platform.</h2>
-          {/* <h2 className="hero-subtitle" style={{color: "white", marginTop: "0px"}}>Flexible, Scalable, and Efficient Platform Solutions</h2> */}
+          <h1 className={styles.herotitle}style={{color: "white", marginBottom: "0px"}}>Platform Services</h1>
+          <h2 className={styles.herosubtitle} style={{color: "white", marginTop: "0px"}}>Unlock the Full Potential of Your Digital Platform.</h2>
         </div>
       </section>
-
-      {/* Intro Section */}
       <section className={styles.introsection}>
         <div className={styles.introwrapper}>
           <div className={styles.introleft}>
@@ -167,8 +162,6 @@ const PlatformServicesPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Trust Section */}
       <section className={styles.trustsection}>
         <div className={styles.trustcontainer}>
           <div className={styles.sectionheader}>
@@ -191,8 +184,6 @@ const PlatformServicesPage = () => {
           </div>
         </div>
       </section>
-
-      {/* What We Do Section */}
       <section className={styles.whatwedosection}>
         <div className={styles.whatwedocontainer}>
           <div className={styles.sectionheader}>
@@ -215,9 +206,7 @@ const PlatformServicesPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Services Section */}
-      <section className={styles.servicessection}>
+      <section className={styles.trustsection}>
         <div className={styles.servicescontainer}>
           <div className={styles.sectionheader}>
             <h2 className={styles.sectiontitle}>Our Platform Services</h2>
@@ -253,10 +242,7 @@ const PlatformServicesPage = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
       <section className={styles.ctasection}>
-        <div className={styles.ctapattern}></div>
         <div className={styles.ctacontent}>
           <h2 className={styles.ctatitle}>Ready to Optimize Your OutSystems Platform?</h2>
           <p className={styles.ctadescription}>

@@ -1,8 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import ServiceCopyrights from '@/app/component/service-copyright/page';
-
-// Material-UI Icons - Install with: npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
 import ShieldIcon from '@mui/icons-material/Shield';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
@@ -136,26 +134,26 @@ export default function CloudServicesPage() {
       transition: 'all 1s ease-out 0.6s'
     },
     section: {
-      margin: '0 auto',
-      padding: '50px 20px',
-      paddingTop:'0px',
+      margin: '4% auto',
+      padding: '0px 40px',
     },
     sectionTitle: {
       fontSize: '2.5rem',
       fontWeight: 700,
       textAlign: 'center',
       color: 'rgb(116,40,148)',
-      marginTop:'0%',
+      margin:'0%',
+      
     },
     intro: {
       textAlign: 'center',
       fontSize: '1.125rem',
-      lineHeight: '1.8',
       color: '#555',
       maxWidth: '900px',
+      lineHeight: '1.8',
       margin: '0 auto',
       opacity: isVisible ? 1 : 0,
-      transition: 'opacity 1s ease-out 1.2s'
+      transition: 'opacity 1s ease-out 1.2s',
     },
     grid: {
       display: 'grid',
@@ -189,12 +187,13 @@ export default function CloudServicesPage() {
     },
     whyChooseSection: {
       backgroundColor: 'rgba(116,40,148,0.05)',
-      padding: '80px 20px'
+      padding: '40px 0px'
     },
     trustGrid: {
       display: 'grid',
       gap: '20px',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))'
+      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+      marginBottom:'20px'
     },
     trustCard: {
       backgroundColor: 'rgba(116,40,148,0.03)',
@@ -208,7 +207,7 @@ export default function CloudServicesPage() {
     whatWeDoSection: {
       backgroundColor: 'rgb(116,40,148)',
       color: 'white',
-      padding: '80px 20px'
+      padding: '40px 20px'
     },
     whatWeDoGrid: {
       display: 'grid',
@@ -231,18 +230,19 @@ export default function CloudServicesPage() {
     conclusionCard: {
       background: 'linear-gradient(135deg, rgba(116,40,148,0.1) 0%, rgba(116,40,148,0.05) 100%)',
       borderRadius: '16px',
-      padding: '60px 40px',
+      padding: '10px 40px',
       textAlign: 'center',
-      opacity: isVisible ? 1 : 0,
-      transform: isVisible ? 'scale(1)' : 'scale(0.95)',
-      transition: 'all 0.8s ease 1.5s'
+      //opacity: isVisible ? 1 : 0,
+      // transform: isVisible ? 'scale(1)' : 'scale(0.95)',
+      // transition: 'all 0.8s ease 1.5s'
     },
     buttonContainer: {
       display: 'flex',
       gap: '20px',
       justifyContent: 'center',
       flexWrap: 'wrap',
-      marginTop: '30px'
+      marginTop: '30px',
+      marginBottom:'30px'
     },
     button: {
       padding: '15px 40px',
@@ -295,8 +295,6 @@ export default function CloudServicesPage() {
           }
         }
       `}</style>
-
-      {/* Hero Section */}
       <div style={styles.heroSection}>
         <div style={{
           ...styles.heroBackground,
@@ -320,7 +318,7 @@ export default function CloudServicesPage() {
       </div>
 
       <div style={{...styles.section}}>
-        <div style={{...styles.intro, paddingTop:'5%'}}>
+        <div style={{...styles.intro, paddingTop:'2%'}}>
           <div style={{color:"rgb(116,40,148)", margin:"0px", paddingLeft:'5%'}}>
             Building a Smarter Future with Cloud Technology 
           </div>
@@ -337,9 +335,8 @@ export default function CloudServicesPage() {
         </div>
       </div>
 
-      {/* Services Grid */}
-      <div style={styles.section}>
-        <h2 style={styles.sectionTitle}>Our Cloud Services</h2>
+      <div style={{...styles.section, padding:'2% 40px'}}>
+        <h2 style={{...styles.sectionTitle,paddingBottom :'2%'}}>Our Cloud Services</h2>
         <div style={styles.grid}>
           {services.map((service, index) => (
             <div 
@@ -385,10 +382,9 @@ export default function CloudServicesPage() {
         </div>
       </div>
 
-      {/* Why Trust Us */}
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>Why Businesses Trust Us</h2>
-        <p style={{...styles.intro, marginBottom: '60px'}}>
+        <p style={{...styles.intro, marginBottom: '40px'}}>
           Our commitment to excellence and customer success has made us a trusted partner 
           for organizations worldwide.
         </p>
@@ -412,10 +408,9 @@ export default function CloudServicesPage() {
         </div>
       </div>
 
-      {/* What We Do */}
       <div style={styles.whatWeDoSection}>
         <h2 style={{...styles.sectionTitle, color: 'white'}}>What We Do</h2>
-        <p style={{...styles.intro, color: 'rgba(255,255,255,0.9)', marginBottom: '60px'}}>
+        <p style={{...styles.intro, color: 'rgba(255,255,255,0.9)', marginBottom: '40px'}}>
           We deliver comprehensive cloud solutions that drive digital transformation
         </p>
         <div style={styles.whatWeDoGrid}>
@@ -454,8 +449,8 @@ export default function CloudServicesPage() {
 
       {/* Conclusion */}
       <div style={styles.section}>
-        <div style={{...styles.conclusionCard, marginTop:'4%'}}>
-          <h2 style={{fontSize: '2.5rem', fontWeight: 700, color: 'rgb(116,40,148)', marginBottom: '25px'}}>
+        <div style={{...styles.conclusionCard, marginTop:'1%'}}>
+          <h2 style={{fontSize: '2.5rem', fontWeight: 700, color: 'rgb(116,40,148)'}}>
             Ready to Transform Your Business?
           </h2>
           <p style={{fontSize: '1.25rem', color: '#555', lineHeight: '1.8', marginBottom: '30px'}}>

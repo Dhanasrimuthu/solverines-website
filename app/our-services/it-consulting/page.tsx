@@ -48,11 +48,11 @@ const ITConsultingPage = () => {
       title: 'Platform & Application Consulting',
       description: 'Provide expert advice on selecting, implementing, and optimizing platforms like OutSystems. Ensure applications are scalable, secure, and aligned with business processes.'
     },
-    {
-      icon: <VerifiedUser sx={{ fontSize: 40 }} />,
-      title: 'IT Governance & Risk Management',
-      description: 'Establish governance frameworks and risk management strategies to ensure compliance, security, and operational resilience across IT systems and platforms.'
-    },
+    // {
+    //   icon: <VerifiedUser sx={{ fontSize: 40 }} />,
+    //   title: 'IT Governance & Risk Management',
+    //   description: 'Establish governance frameworks and risk management strategies to ensure compliance, security, and operational resilience across IT systems and platforms.'
+    // },
     {
       icon: <Assessment sx={{ fontSize: 40 }} />,
       title: 'Process Optimization & Innovation',
@@ -109,7 +109,6 @@ const ITConsultingPage = () => {
   return (
     <>
     <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh', paddingBottom: '4rem' }}>
-      {/* Hero Section */}
       <Grid container sx={{ background: 'linear-gradient(135deg, rgb(116,40,148) 0%, rgb(85,30,110) 100%)', color: 'white', paddingTop: 8, paddingBottom:'2%'}}>
         <Container maxWidth="lg" >
           <Fade in={true} timeout={1000}>
@@ -164,20 +163,16 @@ const ITConsultingPage = () => {
           </Fade>
         </Container>
       </Grid>
-
-      {/* Introduction Section */}
-      <Container maxWidth="lg" sx={{ mt: 8, mb: 6 }}>
+      <Container maxWidth="lg" sx={{ m: 5}}>
         <Fade in={true} timeout={1000}>
-          <Paper elevation={0} sx={{ p: 4, backgroundColor: '#ffffff', border: '1px solid #e0e0e0' }}>
+          <Paper elevation={0} sx={{ p: 4, backgroundColor: '#ffffff', border: '1px solid #e0e0e0', }}>
             <Typography variant="body1" sx={{ lineHeight: 1.9, fontSize: '1.05rem', color: '#444' }}>
               IT consulting helps organizations align technology initiatives with business goals. By analyzing existing systems, processes, and workflows, IT consulting services provide actionable strategies, optimize technology investments, and support digital transformation. Whether planning new initiatives, modernizing infrastructure, or adopting new platforms, IT consulting ensures technology delivers measurable business value.
             </Typography>
           </Paper>
         </Fade>
       </Container>
-
-      {/* Services Section */}
-      <Container maxWidth="lg" sx={{ mt: 8 }}>
+      <Container maxWidth="lg" sx={{ mt: 5 }}>
         <Fade in={true} timeout={1200}>
           <Grid container spacing={2} sx={{ mb: 6 }}>
             <Grid item xs={12}>
@@ -198,15 +193,15 @@ const ITConsultingPage = () => {
                 <Card
                   elevation={0}
                   sx={{
+                    borderRadius:'12px',
                     height: '100%',
-                    border: '1px solid #e0e0e0',
-                    backgroundColor: '#fafafa',
+                    borderTop:'4px solid rgb(116,40,148)',
+                    backgroundColor: '#ffffff',
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       transform: 'translateY(-8px)',
                       boxShadow: '0 12px 24px rgba(116,40,148,0.15)',
                       borderColor: 'rgb(116,40,148)',
-                      backgroundColor: '#ffffff'
                     }
                   }}
                 >
@@ -241,9 +236,7 @@ const ITConsultingPage = () => {
           ))}
         </Grid>
       </Container>
-
-      {/* Benefits Section */}
-      <Grid container sx={{ backgroundColor: '#ffffff', py: 8, mt: 8 }}>
+      <Grid container sx={{ backgroundColor: '#ffffff', py: 8, mt: 5 }}>
         <Container maxWidth="lg">
           <Fade in={true} timeout={1000}>
             <Grid container spacing={2} sx={{ mb: 6 }}>
@@ -291,8 +284,6 @@ const ITConsultingPage = () => {
           </Grid>
         </Container>
       </Grid>
-
-      {/* Why Trust Us Section */}
       <Container maxWidth="lg" sx={{ mt: 8 }}>
         <Fade in={true} timeout={1000}>
           <Grid container spacing={2} sx={{ mb: 6 }}>
@@ -359,19 +350,15 @@ const ITConsultingPage = () => {
           ))}
         </Grid>
       </Container>
-
-      {/* Closing Statement Section */}
       <Container maxWidth="lg" sx={{ mt: 8, mb: 6 }}>
         <Fade in={true} timeout={1000}>
-          <Paper elevation={0} sx={{ p: 4, backgroundColor: '#ffffff', border: '1px solid #e0e0e0', textAlign: 'center' }}>
+          <Paper elevation={0} sx={{ p: 4, backgroundColor: '#ffffff', border: '1px solid #e0e0e0', }}>
             <Typography variant="body1" sx={{ lineHeight: 1.9, fontSize: '1.05rem', color: '#444' }}>
               IT consulting services help organizations maximize the value of technology investments. From strategy and platform guidance to risk management and process optimization, IT consulting enables efficient, secure, and innovative operations that support long-term business growth.
             </Typography>
           </Paper>
         </Fade>
       </Container>
-
-      {/* CTA Section */}
       <Grid container sx={{ mt: 8 }}>
         <Container maxWidth="lg">
           <Zoom in={true} timeout={1000}>

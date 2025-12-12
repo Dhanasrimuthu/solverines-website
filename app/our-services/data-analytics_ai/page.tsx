@@ -102,20 +102,19 @@ const DataAnalyticsAIPage = () => {
   return (
     <>
     <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh', paddingBottom: '3rem' }}>
-      <Grid container sx={{ background: 'linear-gradient(135deg, rgb(116,40,148) 0%, rgb(85,30,110) 100%)', color: 'white', paddingTop: 8, paddingBottom: 8 }}>
+      <Grid container sx={{ background: 'linear-gradient(135deg, rgb(116,40,148) 0%, rgb(85,30,110) 100%)', color: 'white', paddingTop: 8, paddingBottom:5 }}>
         <Container maxWidth="lg">
           <Fade in={true} timeout={1000}>
             <Grid container spacing={2} alignItems="center">
-              <Grid item xs={12} md={8} sx={{width : '50%',marginTop:'3%'}}>
+              <Grid item xs={12} md={8} sx={{width : '45%',marginTop:'5%'}}>
                 <Slide direction="right" in={true} timeout={800}>
                   <Typography 
                     variant="h2" 
                     component="h1"
                     sx={{ 
                       color: "white", 
-                      mb: 2, 
                       fontWeight: 'bold',
-                      fontSize: { xs: '2rem', md: '2rem' }
+                      fontSize: { xs: '1.8rem', md: '1.8rem' }
                     }}
                   >
                     Data Analytics & AI
@@ -127,7 +126,7 @@ const DataAnalyticsAIPage = () => {
                     sx={{ 
                       color: "white", 
                       mt: 0,
-                      fontWeight: 400,
+                      fontWeight: 500,
                       fontSize: { xs: '1.1rem', md: '1.4rem' },
                       lineHeight: 1.5
                     }}
@@ -161,7 +160,6 @@ const DataAnalyticsAIPage = () => {
                     borderTop:'4px solid rgb(116,40,148)',
                     borderRadius:'12px',
                     height: '100%',
-                    //border: '1px solid #e0e0e0',
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       transform: 'translateY(-8px)',
@@ -201,7 +199,7 @@ const DataAnalyticsAIPage = () => {
           ))}
         </Grid>
       </Container>
-      <Grid container sx={{ backgroundColor: '#ffffff', py: 8, mt: 8 }}>
+      <Grid container sx={{ backgroundColor: '#ffffff', py: 5, mt: 8}}>
         <Container maxWidth="lg">
           <Fade in={true} timeout={1000}>
             <Grid container spacing={2} sx={{ mb: 6 }}>
@@ -249,7 +247,7 @@ const DataAnalyticsAIPage = () => {
           </Grid>
         </Container>
       </Grid>
-      <Container maxWidth="lg" sx={{ mt: 8 }}>
+      <Container maxWidth="lg" sx={{ mt: 5 }}>
         <Fade in={true} timeout={1000}>
           <Grid container spacing={2} sx={{ mb: 6 }}>
             <Grid item xs={12}>
