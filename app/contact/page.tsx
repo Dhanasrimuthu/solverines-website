@@ -4,7 +4,7 @@ import Image from "next/image";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Link, Typography } from "@mui/material";
 
 export default function Contact(){
   const datas = [
@@ -102,7 +102,16 @@ export default function Contact(){
             {data.title}
           </Typography>
           <Typography variant="body1" className={styles.span2}>
-            {data.description}
+             {data.title.toLowerCase().includes('mail') ? (
+            <Link
+              href={`mailto:${data.description}`}
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              {data.description}
+            </Link>
+          ) : (
+            data.description
+          )}
           </Typography>
         </Box>
       </Box>
