@@ -141,7 +141,7 @@ export default function Homes() {
   const industries = [
     { src: '/images/folio/Automotive.png', title: 'Automotive', link: '/industries/automotive' },
     { src: '/images/folio/ConsumerGoods.png', title: 'Consumer Goods', link: '#' },
-    { src: '/images/folio/FinancialService.png', title: 'Financial Service', link: '#' },
+    { src: '/images/folio/FinancialService.png', title: 'Financial Service', link: '/industries/financial-services' },
     { src: '/images/folio/Logistics.png', title: 'Logistics', link: '#' },
     { src: '/images/folio/healthcare.png', title: 'Health Care', link: '#' },
     { src: '/images/folio/realestate.png', title: 'Real Estates', link: '#' },

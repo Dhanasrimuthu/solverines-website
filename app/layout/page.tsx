@@ -12,42 +12,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import styles from '../layout.module.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-import { IconButton,Switch,styled } from '@mui/material';
+import { IconButton } from '@mui/material';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import MenuIcon from '@mui/icons-material/Menu';
 
-
-
-const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-  width: 42,
-  height: 22.5,
-  padding: 4,
-  '& .MuiSwitch-switchBase': {
-    margin: 0,
-    padding: 0,
-    transform: 'translateX(4px)',
-    '&.Mui-checked': {
-      color: 'black',
-      backgroundColor: '#fff',
-      transform: 'translateX(18px)',
-    },
-  },
-  '& .MuiSwitch-thumb': {
-    backgroundColor: '#001e3c',
-    width: 22,
-    height: 22,
-  },
-  '& .MuiSwitch-track': {
-    opacity: 1,
-    backgroundColor: '#aab4be',
-    borderRadius: 20 / 2,
-  },
-}));
-
-
 export default function Layout() {
-
-
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [servicesMenuAnchor, setServicesMenuAnchor] =useState<null | HTMLElement>(null);
@@ -177,19 +146,19 @@ export default function Layout() {
                 <MenuItem component={Link} href="/industries/automotive" onClick={closeIndustriesMenu } className={styles.li}>
                   Automotive
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/consumer-goods" onClick={closeIndustriesMenu } className={styles.li}>
                   Consumer Goods
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/financial-services" onClick={closeIndustriesMenu } className={styles.li}>
                   Financial Services
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/healthcare" onClick={closeIndustriesMenu } className={styles.li}>
                   Healthcare
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/logistics" onClick={closeIndustriesMenu } className={styles.li}>
                   Logistics
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/real-estates" onClick={closeIndustriesMenu } className={styles.li}>
                   Real Estates
                 </MenuItem>
               </Menu>
