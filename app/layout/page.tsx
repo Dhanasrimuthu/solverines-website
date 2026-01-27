@@ -127,10 +127,10 @@ export default function Layout() {
                 <MenuItem component={Link} href="/our-services/platform-services" onClick={closeServicesMenu} className={styles.li}>
                   Platform Services
                 </MenuItem>
-                <MenuItem component={Link} href="/outsystems" onClick={closeServicesMenu} className={styles.li}>
+                <MenuItem component={Link} href="/our-services/data-analytics_ai" onClick={closeServicesMenu} className={styles.li}>
                   Data Analytics & AI
                 </MenuItem>
-                <MenuItem component={Link} href="/outsystems" onClick={closeServicesMenu} className={styles.li}>
+                <MenuItem component={Link} href="/our-services/it-consulting" onClick={closeServicesMenu} className={styles.li}>
                   IT Consulting
                 </MenuItem>
               </Menu>
