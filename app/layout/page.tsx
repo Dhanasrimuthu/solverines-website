@@ -146,19 +146,19 @@ export default function Layout() {
                 <MenuItem component={Link} href="/industries/automotive" onClick={closeIndustriesMenu } className={styles.li}>
                   Automotive
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/consumer-goods" onClick={closeIndustriesMenu } className={styles.li}>
                   Consumer Goods
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/financial-services" onClick={closeIndustriesMenu } className={styles.li}>
                   Financial Services
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/healthcare" onClick={closeIndustriesMenu } className={styles.li}>
                   Healthcare
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/logistics" onClick={closeIndustriesMenu } className={styles.li}>
                   Logistics
                 </MenuItem>
-                <MenuItem component={Link} href="/our-services/cloud-services" onClick={closeIndustriesMenu } className={styles.li}>
+                <MenuItem component={Link} href="/industries/real-estates" onClick={closeIndustriesMenu } className={styles.li}>
                   Real Estates
                 </MenuItem>
               </Menu>
