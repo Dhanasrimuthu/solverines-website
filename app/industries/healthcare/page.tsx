@@ -24,6 +24,7 @@ import {
   Fade,
   Slide,
 } from "@mui/material";
+import Copyrights from "@/app/component/copyright/page";
 
 const HealthcareLandingPageSplit: React.FC = () => {
   // --- Define the Core Color (Financial Services Theme: Deep Purple) ---
@@ -282,11 +283,7 @@ const HealthcareLandingPageSplit: React.FC = () => {
       </Grid>
 
       <Divider sx={{ borderColor: PRIMARY_COLOR }} />
-      <Grid item sx={{ py: 3, textAlign: "center", bgcolor: "rgb(30, 30, 30)" }}>
-        <Typography color="white" variant="body2">
-          © 2025 Solverines technology solutions. All rights reserved.
-        </Typography>
-      </Grid>
+      <Copyrights/>
     </Grid>
   );
 };

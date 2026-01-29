@@ -67,7 +67,7 @@ export default function Homes() {
       imgSrc: "/images/bg/cloud services.png",
       description:
         "In today's fast-paced digital landscape, businesses need to be agile, scalable, and secure. Our Cloud & DevOps services are ....",
-      link: "",
+      link: "our-services/cloud-services",
     },
     {
       id: 3,
@@ -75,7 +75,7 @@ export default function Homes() {
       imgSrc: "/images/bg/application services.png",
       description:
         "In an era where digital transformation is key, our Application Services are designed to deliver robust...",
-      link: "/our-services/cloud-services",
+      link: "/our-services/application-services",
     },
     {
       id: 4,
@@ -83,7 +83,7 @@ export default function Homes() {
       imgSrc: "/images/bg/platform service.png",
       description:
         "In today’s fast-paced market, the ability to innovate, develop, and deliver high-quality products is crucial to staying competitive.....",
-      link: "",
+      link: "our-services/platform-services",
     },
     {
       id: 5,
@@ -91,7 +91,7 @@ export default function Homes() {
       imgSrc: "/images/bg/data analytics & ai.png",
       description:
         "Harness the power of data and automation to drive smarter decision-making and operational efficiency. Our Data & Automation services...",
-      link: "/our-services/cloud-services",
+      link: "/our-services/data-analytics_ai",
     },
     {
       id: 6,
@@ -99,7 +99,7 @@ export default function Homes() {
       imgSrc: "/images/bg/it_consulting.png",
       description:
         "Expert advice to help you leverage technology for business growth and digital transformation....",
-      link: "",
+      link: "/our-services/it-consulting",
     },
   ];
 

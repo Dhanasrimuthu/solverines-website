@@ -25,6 +25,7 @@ import {
   Fade,
   Slide,
 } from "@mui/material";
+import Copyrights from "@/app/component/copyright/page";
 
 const RealEstateLandingPageNoYellow: React.FC = () => {
   // --- Define the Core Color (Deep Purple, White, and Dark Grey Theme) ---
@@ -271,11 +272,7 @@ const RealEstateLandingPageNoYellow: React.FC = () => {
       </Grid>
 
       <Divider sx={{ borderColor: PRIMARY_COLOR }} />
-      <Grid item sx={{ py: 3, textAlign: "center", bgcolor: SECONDARY_COLOR }}>
-        <Typography color="white" variant="body2">
-          © 2025 Solverines technology solutions. All rights reserved.
-        </Typography>
-      </Grid>
+      <Copyrights/>
     </Grid>
   );
 };

@@ -26,9 +26,8 @@ import {
   TrackChanges,
   Storage
 } from '@mui/icons-material';
-import ServiceCopyrights from '@/app/component/service-copyright/page';
-import style  from './data-analytics.module.css';
 import Link from 'next/link';
+import Copyrights from '@/app/component/copyright/page';
 const DataAnalyticsAIPage = () => {
   const services = [
     {
@@ -355,7 +354,7 @@ const DataAnalyticsAIPage = () => {
         </Container>
       </Grid>
     </div>
-    <ServiceCopyrights/>
+    <Copyrights/>
     </>
   );
 };

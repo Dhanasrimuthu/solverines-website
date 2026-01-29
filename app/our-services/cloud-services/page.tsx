@@ -1,6 +1,5 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import ServiceCopyrights from '@/app/component/service-copyright/page';
 import ShieldIcon from '@mui/icons-material/Shield';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
@@ -12,6 +11,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import Copyrights from '@/app/component/copyright/page';
 
 export default function CloudServicesPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -466,8 +466,7 @@ export default function CloudServicesPage() {
           </div>
         </div>
       </div>
-      
-      <ServiceCopyrights/>
+      <Copyrights/>
     </div>
   );
 }

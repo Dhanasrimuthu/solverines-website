@@ -11,6 +11,7 @@ import {
 
 // Import the background component
 import VehicleBackground from "../../component/three/VehicleDigitalTwin";
+import Copyrights from "@/app/component/copyright/page";
 
 const AutomotiveLandingPage: React.FC = () => {
   // Your Data
@@ -204,11 +205,7 @@ const AutomotiveLandingPage: React.FC = () => {
       </Grid>
 
       {/* FOOTER */}
-      <Grid sx={{ py: 4, textAlign: "center", bgcolor: "black", borderTop: "1px solid #333" }}>
-        <Typography color="grey.500" variant="body2">
-          © 2025 Solverines Technology Solutions Pvt. Ltd. All rights reserved.
-        </Typography>
-      </Grid>
+      <Copyrights />
     </Grid>
   );
 };

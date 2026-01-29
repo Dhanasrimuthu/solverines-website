@@ -19,8 +19,8 @@ import {
   Code,
   Public as Globe
 } from '@mui/icons-material';
-import ServiceCopyrights from '@/app/component/service-copyright/page';
 import styles from './platform.module.css'
+import Copyrights from '@/app/component/copyright/page';
 const PlatformServicesPage = () => {
   const [activeService, setActiveService] = useState<number|null>(null);
   const [scrollY, setScrollY] = useState(0);
@@ -256,7 +256,7 @@ const PlatformServicesPage = () => {
           </button>
         </div>
       </section>
-      <ServiceCopyrights/>
+      <Copyrights/>
     </div>
   );
 };

@@ -31,6 +31,7 @@ import {
   Fade,
   Slide,
 } from "@mui/material";
+import Copyrights from "@/app/component/copyright/page";
 
 const FinancialServicesLandingPage: React.FC = () => {
   // --- Define the Core Color ---
@@ -398,11 +399,7 @@ const FinancialServicesLandingPage: React.FC = () => {
       </Grid>
 
       <Divider sx={{ borderColor: PRIMARY_COLOR }} />
-      <Grid sx={{ py: 3, textAlign: "center", bgcolor: "black" }}>
-        <Typography color="white" variant="body2">
-          © 2025 Solverines Technology solutions. All rights reserved.
-        </Typography>
-      </Grid>
+      <Copyrights/>
     </Grid>
   );
 };
