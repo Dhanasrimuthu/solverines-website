@@ -180,9 +180,9 @@ export default function Layout() {
               <Grid display="flex" alignItems="center" >
                 <ChatOutlinedIcon sx={{ fontSize: '40px' }} />
                 <Typography variant="body2" ml={2}>
-                  <span className={styles.contact}>Phone</span> : +91 7550042242
+                  <span className={styles.contacts}>Phone</span> : +91 7550042242
                   <br />
-                  <span className={styles.contact}>Email</span> : info@solverines.com
+                  <span className={styles.contacts}>Email</span> : info@solverines.com
                 </Typography>
               </Grid>
               <Grid className={`${styles.serach} ${scrolled ? styles.scrolled : ''}`}>
