@@ -28,8 +28,8 @@ import {
   VerifiedUser,
   AutoAwesome
 } from '@mui/icons-material';
-import ServiceCopyrights from '@/app/component/service-copyright/page';
 import Link from 'next/link';
+import Copyrights from '@/app/component/copyright/page';
 
 const ITConsultingPage = () => {
   const services = [
@@ -401,7 +401,7 @@ const ITConsultingPage = () => {
         </Container>
       </Grid>
     </div>
-    <ServiceCopyrights/>
+    <Copyrights/>
     </>
   );
 };

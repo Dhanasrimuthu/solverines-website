@@ -82,6 +82,7 @@ export default function Layout() {
     <>
     <AppBar
       className={`${styles.header03} ${scrolled ? styles.scrolled : ''} ${hidden ? styles.hidden : ''}`}
+      sx={scrolled ? {boxShadow: '0 2px 4px rgba(168, 163, 163, 0.1)'}: {boxShadow:'none'}}
     >
       <Toolbar>
         <Grid container alignItems="center" spacing={2}>
@@ -99,14 +100,14 @@ export default function Layout() {
           
           {/* Navigation Menu */}
           <Grid item xs={8} md={6} className={styles.navMenu}>
-            <Grid display="flex" justifyContent="center">
-              <Button component={Link} href="/" className={styles.menuLink}>
+            <Grid display="flex" justifyContent="center" >
+              <Button component={Link} href="/" className={styles.menuLink} sx={{textTransform:'none'}}>
                 Home
               </Button>
-              <Button component={Link} href="/outsystems" className={styles.menuLink}>
+              <Button component={Link} href="/outsystems" className={styles.menuLink} sx={{textTransform:'none'}}>
                 OutSystems
               </Button>
-              <Button onClick={openServicesMenu} className={styles.menuLink}>
+              <Button onClick={openServicesMenu} className={styles.menuLink} sx={{textTransform:'none'}}>
                 Our Services<KeyboardArrowDownIcon />
               </Button>
               <Menu
@@ -134,7 +135,7 @@ export default function Layout() {
                   IT Consulting
                 </MenuItem>
               </Menu>
-              <Button onClick={openIndustriesMenu} className={styles.menuLink}>
+              <Button onClick={openIndustriesMenu} className={styles.menuLink} sx={{textTransform:'none'}}>
                 Industries<KeyboardArrowDownIcon />
               </Button>
               <Menu sx={{minWidth:"500px"}}
@@ -162,7 +163,7 @@ export default function Layout() {
                   Real Estates
                 </MenuItem>
               </Menu>
-              <Button component={Link} href="/contact" className={styles.menuLink}>
+              <Button component={Link} href="/contact" className={styles.menuLink} sx={{textTransform:'none'}}>
                 Contact
               </Button>
             </Grid>
@@ -175,13 +176,13 @@ export default function Layout() {
             md={3}
             className={`${styles.contact} ${scrolled ? styles.scrolled : ''}`}
           >
-            <Grid display="flex" alignItems="center" justifyContent="flex-end" gap={2}>
+            <Grid display="flex" alignItems="center" justifyContent="flex-end" gap={2} >
               <Grid display="flex" alignItems="center" >
-                <ChatOutlinedIcon sx={{ fontSize: '40px', paddingRight: '5%' }} />
-                <Typography variant="body2" ml={1}>
-                  Phone:+91 7550042242
+                <ChatOutlinedIcon sx={{ fontSize: '40px' }} />
+                <Typography variant="body2" ml={2}>
+                  <span className={styles.contact}>Phone</span> : +91 7550042242
                   <br />
-                  Email:info@solverines.com
+                  <span className={styles.contact}>Email</span> : info@solverines.com
                 </Typography>
               </Grid>
               <Grid className={`${styles.serach} ${scrolled ? styles.scrolled : ''}`}>

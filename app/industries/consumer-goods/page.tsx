@@ -23,6 +23,7 @@ import {
   Fade,
 } from "@mui/material";
 import GlobalNetwork from "../../component/three/GlobalNetwork"; // 3D Component
+import Copyrights from "@/app/component/copyright/page";
 
 const ConsumerGoodsLandingPage: React.FC = () => {
   const PURPLE = "rgb(116, 40, 148)";
@@ -150,9 +151,7 @@ const ConsumerGoodsLandingPage: React.FC = () => {
       </Grid>
 
       <Divider />
-      <Grid item sx={{ py: 4, textAlign: "center", bgcolor: "white" }}>
-        <Typography variant="body2" color="text.secondary">© 2025 Solverines Technology Solutions</Typography>
-      </Grid>
+      <Copyrights/>
     </Grid>
   );
 };

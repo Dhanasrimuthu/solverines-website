@@ -21,6 +21,8 @@
   text-align: center;
   align-items: center;
   align-content: center;
+  transform: none;
+  
   /* padding: 2.2%; */
   /* border: 1px solid black; */
 }
@@ -48,6 +50,7 @@
 }
 
 /* You can also change other styles (e.g., text color) when scrolled */
+
 .header03.scrolled .menuLink {
   color: rgb(7, 6, 6);
 }
@@ -127,8 +130,9 @@
   width: 90%; 
 }
 
-
-
+.contact{
+  font-weight: bold;
+}
 
 
 

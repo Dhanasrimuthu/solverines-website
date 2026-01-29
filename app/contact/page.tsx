@@ -5,6 +5,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import { Box, Grid, Link, Typography } from "@mui/material";
+import Copyrights from "../component/copyright/page";
 
 export default function Contact(){
   const datas = [
@@ -135,33 +136,7 @@ export default function Contact(){
       </div>
     </section>
 
-    <footer className={styles.footer}>
-        <div className={`${styles.container} largeContainer`}>
-          <div className="row"></div>
-        </div>
-      </footer>
-
-      <section className={styles.copyright}>
-        <div className={`${styles.container} largeContainer`}>
-          <div className="row">
-            <div className="col-md-6">
-              <p>
-                © Copyrights Solverines Technology Solutions Pvt. Ltd. 2024. All rights reserved.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <div className={styles.copyMenu}>
-                <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Outsystems</a> </li>
-                  <li><a href="">Contact</a> </li>
-                  <li><a href="">About</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <Copyrights/>
 </Fragment>
     );
 }
